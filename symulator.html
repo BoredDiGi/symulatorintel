@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Symulator html</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="sym"> 
+            
+                <div id="rejestry">
+                    AX <input type="text" name="ax" id="ax" value="0"></br>
+                    BX <input type="text" name="bx" id="bx" value="0"></br>
+                    CX <input type="text" name="cx" id="cx" value="0"></br>
+                    DX <input type="text" name="dx" id="dx" value="0">
+                </div>
+                <div id="komendy">
+                    Komenda 
+                    <select name="komenda">
+                        <option>mov</option>
+                    </select> </br>
+                    Parametr 1
+                    <select name="komenda">
+                        <option>ax</option>
+                        <option>bx</option>
+                        <option>cx</option>
+                        <option>dx</option>
+                    </select> </br>
+                    Parametr 2
+                    <select name="komenda">
+                        <option>ax</option>
+                        <option>bx</option>
+                        <option>cx</option>
+                        <option>dx</option>
+                    </select>
+                </div>
+                <input type="button" value="zasymuluj" onclick="sym()" />
+            
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
