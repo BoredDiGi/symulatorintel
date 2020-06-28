@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <title>Symulator html</title>
@@ -7,31 +7,32 @@
     </head>
     <body>
         <div id="sym"> 
-            
+            <h1 onclick="autor()"> Projekt Zaliczeniowy </h1>
+            <h2 id="intel"> INTEL 8086 </h2>
                 <div id="rejestry">
-                    AX <input type="text" name="ax" id="ax" value="0"></br>
-                    BX <input type="text" name="bx" id="bx" value="0"></br>
-                    CX <input type="text" name="cx" id="cx" value="0"></br>
-                    DX <input type="text" name="dx" id="dx" value="0">
+                    AX <input type="text" name="ax" id="ax" value="0" pattern="[a-fA-F\d]+"/><br />
+                    BX <input type="text" name="bx" id="bx" value="0" pattern="[a-fA-F\d]+"/><br />
+                    CX <input type="text" name="cx" id="cx" value="0" pattern="[a-fA-F\d]+"/><br />
+                    DX <input type="text" name="dx" id="dx" value="0" pattern="[a-fA-F\d]+"/>
                 </div>
                 <div id="komendy">
                     Komenda 
                     <select name="komenda">
                         <option>mov</option>
-                    </select> </br>
+                    </select> <br />
                     Parametr 1
-                    <select name="komenda">
-                        <option>ax</option>
-                        <option>bx</option>
-                        <option>cx</option>
-                        <option>dx</option>
-                    </select> </br>
+                    <select name="par1" id="par1">
+                        <option value="ax">ax</option>
+                        <option value="bx">bx</option>
+                        <option value="cx">cx</option>
+                        <option value="dx">dx</option>
+                    </select> <br />
                     Parametr 2
-                    <select name="komenda">
-                        <option>ax</option>
-                        <option>bx</option>
-                        <option>cx</option>
-                        <option>dx</option>
+                    <select name="par2" id="par2">
+                        <option value="ax">ax</option>
+                        <option value="bx">bx</option>
+                        <option value="cx">cx</option>
+                        <option value="dx">dx</option>
                     </select>
                 </div>
                 <input type="button" value="zasymuluj" onclick="sym()" />

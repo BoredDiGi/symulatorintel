@@ -1,3 +1,7 @@
+body {
+    background: #1b1b1b;
+    color: white;
+}
 #sym
 {
 display: block;
@@ -8,7 +12,19 @@ display: block;
 {
 float: left;
 
+
 }
 #komendy
 {
+}
+input:hover
+{
+    background: #656565;
+    transition-duration: 0.2s;
+    color: white;
+}
+select:hover {
+    background: #656565;
+    transition-duration: 0.2s;
+    color: white;
 }
