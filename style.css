@@ -1,14 +1,27 @@
-#sym
-{
-display: block;
-
-
+body {
+    background: #1b1b1b;
+    color: white;
 }
-#rejestry
-{
-float: left;
 
+#sym {
+    display: block;
 }
-#komendy
-{
+
+#rejestry {
+    float: left;
+}
+
+#komendy {
+}
+
+input:hover {
+    background: #656565;
+    transition-duration: 0.2s;
+    color: white;
+}
+
+select:hover {
+    background: #656565;
+    transition-duration: 0.2s;
+    color: white;
 }
